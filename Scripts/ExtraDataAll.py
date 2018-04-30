@@ -175,7 +175,7 @@ def addExtra(tag,i):
             achd[ac["name"]] = int(ac["value"])
         for a in achievements:
             try:
-                tuplist.append((camelCase(a)),achd(a))
+                tuplist.append((camelCase(a)),achd[a])
             except:
                 pass
         extras[tag] = tuplist
