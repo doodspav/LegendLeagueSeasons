@@ -1,7 +1,7 @@
 import MySQLdb, requests
 
 database = "<put db name here>"
-#table name will just be the season_id
+table = "<put table name here>"
 
 db = MySQLdb.connect(host="localhost", user="root", passwd="", db=database, charset="utf8mb4")
 db.autocommit(True)
@@ -14,12 +14,12 @@ league_id = "29000022" #legends league
 base_url = "https://api.clashofclans.com/v1/leagues/%s/seasons/%s" % (league_id,season_id)
 info = []
 
-query = "DROP TABLE `%s`" % season_id
+query = "DROP TABLE `%s`" % table
 try:
     cur.execute(query)
 except:
     pass
-query = "CREATE TABLE `%s` (rank INT(10),trophies INT(5),tag VARCHAR(15),name VARCHAR(30),expLevel INT(4),attackWins INT(8),defenseWins INT(8),clanTag VARCHAR(15),clanName VARCHAR(30),clanBadgeURL VARCHAR(60)) CHARACTER SET utf8mb4" % season_id
+query = "CREATE TABLE `%s` (rank INT(10),trophies INT(5),tag VARCHAR(15),name VARCHAR(30),expLevel INT(4),attackWins INT(8),defenseWins INT(8),clanTag VARCHAR(15),clanName VARCHAR(30),clanBadgeURL VARCHAR(60)) CHARACTER SET utf8mb4" % table
 cur.execute(query)
 
 def getInfo(url, headers, limit=10000, cursor=None):
@@ -50,7 +50,7 @@ leninfo = len(info)
 
 for j in range(leninfo):
     i = info[j]
-    query = "INSERT INTO `%s` (`rank`,`trophies`,`tag`,`name`,`expLevel`,`attackWins`,`defenseWins`,`clanTag`,`clanName`,`clanBadgeURL`) " % season_id
+    query = "INSERT INTO `%s` (`rank`,`trophies`,`tag`,`name`,`expLevel`,`attackWins`,`defenseWins`,`clanTag`,`clanName`,`clanBadgeURL`) " % table
     query += " VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     tuplist = [i["rank"],i["trophies"],i["tag"],i["name"],i["expLevel"],i["attackWins"],i["defenseWins"]]
     if "clan" in i.keys():
