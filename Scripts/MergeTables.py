@@ -45,7 +45,7 @@ cf_values = [] #common field values
 cur.execute("SELECT * FROM `%s`" % table_main)
 for row in cur.fetchall():
 	all_info[row[cfi_main]] = [row[i] for i in range(len(row))]
-	tags.append(row[cfi_main])
+	cf_values.append(row[cfi_main])
 print("Fetched all data from main table.")
 
 cur.execute("SELECT * FROM `%s`" % table_extra)
@@ -56,13 +56,13 @@ print("Fetched all data from extra table.")
 queries = []
 tuples = []
 
-for tag in tags:
+for cfv in cf_values:
 	query = "INSERT INTO `%s` VALUES (" % table_new
 	for i in range(len(fields)):
 		query += "%s,"
 	query = query[:-1]
 	query += ")"
-	info = all_info[tag]
+	info = all_info[cfv]
 	tup = tuple(info)
 	queries.append(query)
 	tuples.append(tup)
