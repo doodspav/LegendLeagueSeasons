@@ -1,6 +1,7 @@
 # LegendLeagueSeasons
 
 ### Information
+All data from 2018-03 onwards is downloaded within 24h of the season ending, regardless of upload time (usually I download it and then get distracted and forget to format and upload it here).
 ##### MySQL
 Each season has its own file. They contain the following information on every player that finished the season in legends league (i.e. had a legends badge and trophies higher than or equal to 4901):
 
