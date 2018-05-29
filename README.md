@@ -1,6 +1,7 @@
 # LegendLeagueSeasons
 
-Information Contained:
+### Information
+##### MySQL
 Each season has its own file. They contain the following information on every player that finished the season in legends league (i.e. had a legends badge and trophies higher than or equal to 4901):
 
 - rank (int)
@@ -16,9 +17,26 @@ Each season has its own file. They contain the following information on every pl
 
 clanBadgeURL is not the full url. The url is in the format "https://api-assets.clashofclans.com/badges/size/clanBadgeURL.png", where clanBadgeURL is the clanBadgeURL provided in the data, and size (not provided) is 70,200, or 512.
 
-The following info is provided for seasons 2018-03 and later:
+The following additional info is provided for season 2018-03:
 
 - townHallLevel (int)
 - barbarianKingLevel (int)
 - archerQueenLevel (int)
 - grandWardenLevel (int)
+
+Seasons 2018-04 and later have all the info provided provided by the official api.
+##### CSV
+Seasons 2018-03 and later have seperate csv files from th7-11 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
+
+The files contain whatever information is available in the MySQL files.
+##### JSON
+Seasons 2018-03 and later have seperate json files from th7-11 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
+
+The files contain whatever information is available in the MySQL files, and the keys are the global ranks.
+
+### Gzip
+Files larger than 24MB are compressed using gzip. For example `yyyy-mm.sql` would become `yyyy-mm.sql.gz`.
+
+If the compressed file is more than 24MB it's split up into files of max size 24MB. For example `yyyy-mm.sql` would become `yyyy-mm.gza` and `yyyy-mm.gzb`.
+
+In the scripts directory there are scripts to decompress all files and return them to their normal state.
