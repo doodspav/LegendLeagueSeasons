@@ -29,10 +29,6 @@ Seasons 2018-04 and later have all the info provided provided by the official ap
 Seasons 2018-03 and later have seperate csv files from th7-11 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
 
 The files contain whatever information is available in the MySQL files.
-##### JSON
-Seasons 2018-03 and later have seperate json files from th7-11 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
-
-The files contain whatever information is available in the MySQL files, and the keys are the global ranks.
 
 ### Gzip
 Files larger than 24MB are compressed using gzip. For example `yyyy-mm.sql` would become `yyyy-mm.sql.gz`.
