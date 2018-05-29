@@ -17,7 +17,7 @@ Make sure you set the variables at the start of the files.
 
 `mysqldump -u... -p... mydb t1 t2 t3 > mydb_tables.sql`
 
-`gzip -c /path/to/your/large/file | split -b 150000000 - compressed.gz`
+`gzip yyyy-mm.sql | split -b 24000000 - yyyy-mm.sql.gz`
 
 # Installing MySQLdb
 You only need to change the pip file if you're using version `10.0.1`.
