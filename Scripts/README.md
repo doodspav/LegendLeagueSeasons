@@ -20,6 +20,7 @@ Make sure you set the variables at the start of the files.
 `gzip -c /path/to/your/large/file | split -b 150000000 - compressed.gz`
 
 # Installing MySQLdb
+You only need to change the pip file if you're using version `10.0.1`.
 ```shell
 > sudo apt-get install python-pip python-dev libmysqlclient-dev
 > nano /usr/bin/pip
