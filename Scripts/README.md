@@ -18,3 +18,25 @@ Make sure you set the variables at the start of the files.
 `mysqldump -u... -p... mydb t1 t2 t3 > mydb_tables.sql`
 
 `gzip -c /path/to/your/large/file | split -b 150000000 - compressed.gz`
+
+# Installing MySQLdb
+```shell
+> sudo apt-get install python-pip python-dev libmysqlclient-dev
+> nano /usr/bin/pip
+```
+Change this:
+```python
+from pip import main
+if __name__ == '__main__':
+    sys.exit(main())
+```
+To this:
+```python
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+```
+And then:
+```shell
+> pip install mysqlclient
+```
