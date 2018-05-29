@@ -12,3 +12,9 @@ Make sure you set the variables at the start of the files.
 **loadTables.py** - Loads all `.sql` files into the specified database (it assumes each file corresponds to a table).
 
 # Standalone Shell Commands
+
+`mysql mydb -e "select * from mytable" -B | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > mytable.csv`
+
+`mysqldump -u... -p... mydb t1 t2 t3 > mydb_tables.sql`
+
+`gzip -c /path/to/your/large/file | split -b 150000000 - compressed.gz`
