@@ -24,6 +24,7 @@ fields1 = [("bestTrophies",i,5),
           ("bestVersusTrophies",i,5),
           ("tag",v,15),
           ("townHallLevel",i,2),
+          ("townHallWeaponLevel",i,2),
           ("builderHallLevel",i,2),
           ("versusBattleWins",i,8),
           ("warStars",i,5)]
@@ -40,7 +41,7 @@ fields2 = [("legendTrophies",i,5),
           ("previousVersusSeasonID",v,7),
           ("previousVersusSeasonRank",i,10),
           ("previousVersusSeasonTrophies",i,5),]
-troops = ['Barbarian', 'Archer', 'Goblin', 'Giant', 'Wall Breaker', 'Balloon', 'Wizard', 'Healer', 'Dragon', 'P.E.K.K.A', 'Minion', 'Hog Rider', 'Valkyrie', 'Golem', 'Witch', 'Lava Hound', 'Bowler', 'Baby Dragon Day', 'Miner', 'Raged Barbarian', 'Sneaky Archer', 'Beta Minion', 'Boxer Giant', 'Bomber', 'Super P.E.K.K.A', 'Cannon Cart', 'Drop Ship', 'Baby Dragon Night', 'Night Witch']
+troops = ['Barbarian', 'Archer', 'Goblin', 'Giant', 'Wall Breaker', 'Balloon', 'Wizard', 'Healer', 'Dragon', 'P.E.K.K.A', 'Minion', 'Hog Rider', 'Valkyrie', 'Golem', 'Witch', 'Lava Hound', 'Bowler', 'Baby Dragon Day', 'Miner', 'Raged Barbarian', 'Sneaky Archer', 'Beta Minion', 'Boxer Giant', 'Bomber', 'Super P.E.K.K.A', 'Cannon Cart', 'Drop Ship', 'Baby Dragon Night', 'Night Witch', 'Wall Wrecker', 'Battle Blimp', 'Electro Dragon']
 spells = ['Lightning Spell', 'Healing Spell', 'Rage Spell', 'Jump Spell', 'Freeze Spell', 'Poison Spell', 'Earthquake Spell', 'Haste Spell', 'Clone Spell', 'Skeleton Spell']
 heroes = ['Barbarian King', 'Archer Queen', 'Grand Warden', 'Battle Machine']
 achievements = [('Bigger Coffers', 2), ('Get those Goblins!', 3), ('Bigger & Better', 2), ('Nice and Tidy', 5), ('Release the Beasts', 1), ('Gold Grab', 10), ('Elixir Escapade', 10), ('Sweet Victory!', 5), ('Empire Builder', 1), ('Wall Buster', 7), ('Humiliator', 7), ('Union Buster', 7), ('Conqueror', 7), ('Unbreakable', 6), ('Friend in Need', 10), ('Mortar Mauler', 7), ('Heroic Heist', 10), ('League All-Star', 2), ('X-Bow Exterminator', 7), ('Firefighter', 7), ('War Hero', 5), ('Treasurer', 12), ('Anti-Artillery', 7), ('Sharing is caring', 10), ('Keep your village safe', 1), ('Master Engineering', 2), ('Next Generation Model', 1), ('Un-Build It', 7), ('Champion Builder', 5), ('High Gear', 1), ('Hidden Treasures', 1), ('Games Champion', 10)]
