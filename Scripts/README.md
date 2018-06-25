@@ -13,7 +13,7 @@ Make sure you set the variables at the start of the files.
 
 # Standalone Shell Commands
 
-`mysql mydb -e "select * from mytable" -B | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > mytable.csv`
+`mysql mydb -e 'select * from mytable' -B | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > mytable.csv`
 
 `mysqldump -u... -p... mydb t1 t2 t3 > mydb_tables.sql`
 
