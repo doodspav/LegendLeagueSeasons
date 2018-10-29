@@ -16,7 +16,7 @@ Each season has its own file. They contain the following information on every pl
 - clanName (str)
 - clanBadgeURL (str)
 
-clanBadgeURL is not the full url. The url is in the format "https://api-assets.clashofclans.com/badges/size/clanBadgeURL.png", where clanBadgeURL is the clanBadgeURL provided in the data, and size (not provided) is 70,200, or 512.
+clanBadgeURL is not the full url. The url is in the format "https://api-assets.clashofclans.com/badges/size/clanBadgeURL.png", where clanBadgeURL is the clanBadgeURL provided in the data, and size (not provided) is 70, 200, or 512.
 
 The following additional info is provided for season 2018-03:
 
