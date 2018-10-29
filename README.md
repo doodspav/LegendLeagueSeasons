@@ -1,7 +1,7 @@
 # LegendLeagueSeasons
 
 ### Information
-All data from 2018-03 onwards is downloaded within 24h (and almost always within an hour) of the season ending, regardless of upload time (usually I download it and then get distracted and forget to format and upload it here). If there was a delay of more than a couple hours after season reset, it will say how long the delay was and the reason for it in the commit description. For seasons before this it doesn't matter since only the legends data has been downloaded, not all the data, and the legends data is saved by supercell at the end of every season.
+All data from 2018-03 onwards is downloaded within 24h (and almost always within an hour) of the season ending, regardless of upload time (usually I download it and then get distracted and forget to format and upload it here). If there was a delay of more than a couple hours after season reset, it will say how long the delay was and the reason for it in the sql file commit description. For seasons before this it doesn't matter since only the legends data has been downloaded, not all the data, and the legends data is saved by supercell at the end of every season.
 ##### MySQL
 Each season has its own file. They contain the following information on every player that finished the season in legends league (i.e. had a legends badge and trophies higher than or equal to 4901):
 
