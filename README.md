@@ -36,4 +36,6 @@ Files larger than 24MB are compressed using gzip. For example `yyyy-mm.sql` woul
 
 If the compressed file is more than 24MB it's split up into files of max size 24MB. For example `yyyy-mm.sql` would become `yyyy-mm.gza` and `yyyy-mm.gzb`.
 
+You should NOT take for granted that the max compressed file size is 24000000 bytes.
+
 In the scripts directory there are scripts to decompress all files and return them to their normal state.
