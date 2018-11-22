@@ -27,7 +27,7 @@ The following additional info is provided for season 2018-03:
 
 Seasons 2018-04 and later have all the info provided provided by the official api. Bear in mind that updates can mean that more information is provided.
 ##### CSV
-Seasons 2018-03 and later have seperate csv files from th7-11 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
+Seasons 2018-03 and later have seperate csv files from th7-12 (th7 is only included if any got to legends that season), and all seasons have a file with all the information.
 
 The files contain whatever information is available in the MySQL files.
 
