@@ -1,5 +1,6 @@
 import requests
 import time
+import sys
 
 api_key = "<put key here>"
 headers = {"Accept":"application/json","authorization":"Bearer "+api_key}
@@ -24,3 +25,4 @@ while True:
 		print("Still waiting... (%s)" % (30*time_waited))
 
 print("\n\n RESULTS ARE OUT!!!")
+sys.exit(99)  # this is just so i have a unique code to be picked up by bash script
