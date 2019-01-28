@@ -18,11 +18,10 @@ while True:
 	r = requests.get(base_url, headers=headers)
 	info_dict = r.json()
 	if len(info_dict["items"]) != 0:
+		print("\n\n RESULTS ARE OUT!!!")
+		sys.exit(99)  # this is just so i have a unique code to be picked up by bash script
 		break
 	else:
 		time.sleep(30)
 		time_waited += 1
 		print("Still waiting... (%s)" % (30*time_waited))
-
-print("\n\n RESULTS ARE OUT!!!")
-sys.exit(99)  # this is just so i have a unique code to be picked up by bash script
