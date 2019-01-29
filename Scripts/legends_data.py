@@ -24,7 +24,7 @@ if args.table:
 if args.season:
     season_id = args.season
 if args.key:
-    api_key = args.key
+    api_key = args.key.strip()
 
 # create database connection
 db = MySQLdb.connect(host="localhost", user="root", passwd="", db=database, charset="utf8mb4")
