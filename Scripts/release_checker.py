@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 # check command line arguments
 if args.key:
-    api_key = args.key
+    api_key = args.key.strip()
 if args.season:
     season_id = args.season
 if args.rate:
