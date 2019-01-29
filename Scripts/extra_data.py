@@ -35,6 +35,7 @@ if args.sleep:
     sleep = args.sleep
 if args.key:
     api_keys += args.key
+api_keys = [k.strip() for k in api_keys]
 
 # create database connection
 db = MySQLdb.connect(host="localhost", user="root", passwd="", db=database, charset="utf8mb4")
