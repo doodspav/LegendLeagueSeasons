@@ -39,7 +39,6 @@ print("Checking...")
 while True:
     r = requests.get(base_url, headers=headers)
     info_dict = r.json()
-    print(info_dict)
     if len(info_dict["items"]) != 0:
         print("\n\nResults are out.")
         sys.exit(exit_code)
